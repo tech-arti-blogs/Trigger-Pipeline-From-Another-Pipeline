@@ -6,6 +6,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-
+  
 steps:
-- script: echo This pipeline runs first !
+- script: echo This pipeline runs first and will trigger a second pipeline !
+- template: 2_azure-pipelines-template.yml
