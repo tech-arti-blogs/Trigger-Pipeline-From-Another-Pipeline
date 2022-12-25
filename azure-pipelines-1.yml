@@ -12,14 +12,12 @@ resources:
     source: azure-pipelines-4.yml # Name of the pipeline referenced by the pipeline resource
     project: Configuring Pipeline # Required only if the source pipeline is in another project
     trigger: true # enable the trigger
-
-  pipelines:
+  
   - pipeline: tech-arti-blogs.js-e2e-express-server (1)   # Name of the pipeline resource
     source: azure-pipelines-1.yml # Name of the pipeline referenced by the pipeline resource
     project: Configuring Pipeline # Required only if the source pipeline is in another project
     trigger: true # enable the trigger
 
-  pipelines:
   - pipeline: tech-arti-blogs.pipelines-java (1)  # Name of the pipeline resource
     source: azure-pipelines-3.yml # Name of the pipeline referenced by the pipeline resource
     project: Configuring Pipeline # Required only if the source pipeline is in another project
