@@ -1,13 +1,6 @@
 trigger:
 - main
-
-resources:
-  pipelines:
-  - pipeline: tech-arti-blogs.Trigger-Pipeline-From-Another-Pipeline      # Name of the pipeline resource
-    source: tech-arti-blogs.js-e2e-express-server # Name of the pipeline referenced by the pipeline resource
-    project: Configuring Pipeline # Required only if the source pipeline is in another project
-    trigger: true # enable the trigger    
-  
+ 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
